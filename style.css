@@ -29,8 +29,58 @@ body{
 	min-height: 600px;
 }
 
+.skin-section{
+	background-image: url(traktor.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+
+.tractor-section{
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
 
 .alpha-channel{
 	height: 600px;
 	background: rgba(0, 0, 0, 0.4);
+}
+
+
+
+/*********
+ *
+ * MODAL
+ *
+ *********/
+.modal{
+	color: #2d2d2d;
+}
+
+.modal-content{
+	border: none !important;	
+}
+
+.modal-title{
+	text-align: center;
+}
+
+.modal-header{
+	border-bottom: none !important;
+}
+.modal-footer{
+	border-top: none !important;
+}
+
+.modal .btn{
+	width: 100%;
+}
+
+
+
+/* Chrome FFS */
+a, button, a:focus, button:focus{
+	outline: 0 !important;
+	text-decoration: none !important;
 }

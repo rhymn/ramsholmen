@@ -19,7 +19,7 @@
 					<div class="col-sm-12">
 						<div class="jumbotron lamb-text">
 							<h1>Ramsholmen</h1>
-							<p>Lamm & honung</p>
+							<p>Lamm, honung och vegetariska fårfällar</p>
 						</div>
 					</div>
 				</div>
@@ -32,8 +32,23 @@
 					<div class="row">
 						<div class="col-sm-12">
 							<div class="jumbotron lamb-text">
-								<h2>Lamm</h2>
+								<h2>Lammlåda</h2>
 								<p>Våra lamm går ute året runt och äter naturligt gräs. I november kommer det finnas lammlådor på 8-12kg för 210kr/kg. Hämtning i Örby utanför Skene, utkörning till centrala Göteborg för 200kr</p>
+
+								<p>
+									<button class="btn" type="button" data-target="#lamb-collapse" data-toggle="collapse">Innehåll lammlåda</button>
+
+									<div class="collapse" id="lamb-collapse">
+										<ul>
+											<li>Lamm racks</li>
+											<li>Kotletter</li>
+											<li>Karré skivad</li>
+											<li>Nätade stekar utan ben</li>
+											<li>Grytbitar av hals och bog</li>
+											<li>Färs på övrigt kött</li>
+										</ul>										
+									</div>
+								</p>
 							</div>
 						</div>
 					</div>
@@ -48,7 +63,7 @@
 						<div class="col-sm-12">
 							<div class="jumbotron">
 								<h2>Honung</h2>
-								<p>Rå & nyslungad sommarängshonung. Vi har precis slungat och det är den godaste honungen vi någonsin smakat. En riktig delikatess, i glasburkar om 280g.</p>
+								<p>Rå & nyslungad sommarängshonung. Vi har precis slungat och det är den godaste honungen vi någonsin smakat. En riktig delikatess, i glasburkar om 280g. 100kr</p>
 							</div>
 						</div>
 					</div>
@@ -57,12 +72,47 @@
 		</div>
 
 
+		<div class="section skin-section">
+			<div class="alpha-channel">
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-sm-12">
+							<div class="jumbotron">
+								<h2>Vegetarisk fårfäll</h2>
+								<p>Fårens ull har nästintill magiska egenskaper. Ullen klipps i ett stycke och tovas & tvättas. All fällar är vegetariska vilket innebär att fåret fortfarande lever. Inga kemikalier har använts vid framställningen förutom vanligt handdiskmedel. 2000kr - 4000kr</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="footer">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-sm-12">
+						<div class="jumbotron">
+							<h2>Kontakt</h2>
+							<p><a href="http://instagram.com/ramsholmen/">Instagram</a></p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+		<script src="http://code.jquery.com/jquery-2.1.3.min.js"></script>
+		<script src="http://netdna.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+
 		<script type="application/ld+json">
 			{
 				"@context" : "http://schema.org",
 				"@type" : "Organization",
 				"name": "Ramsholmen",
-				"url" : "http://www.ramshol.men"
+				"url" : "http://www.ramshol.men",
+				"sameAs" : [
+					"http://instagram.com/ramsholmen/"
+				]
 			}
 		</script>
 
@@ -82,17 +132,17 @@
 				"@type": "Product",
 				"name": "Ramsholmens nyslungade honung",
 				"image": "http://www.ramshol.men/honey.jpg",
-				"description": "Rå & nyslungad. Vi har precis slungat honungen och det är den godaste vi någonsin smakat. En riktig delikatess, i glasburkar om 280g.",
+				"description": "Rå & nyslungad. Vi har precis slungat honungen och det är den godaste vi någonsin smakat. En riktig delikatess, i glasburkar om 280g. 100kr",
 				"brand": {
 					"@type": "Thing",
-					"name": "Rasmholmens"
+					"name": "Ramsholmens"
 				},
 				"offers": {
 					"@type": "Offer",
 					"priceCurrency": "SEK",
 					"price": "100",
 					"priceValidUntil": "2015-12-31",
-					"itemCondition": "http://schema.org/UsedCondition",
+					"itemCondition": "http://schema.org/NewCondition",
 					"availability": "http://schema.org/InStock",
 					"seller": {
 						"@type": "Organization",
@@ -102,6 +152,55 @@
 			}
 		</script>
 
+		<script type="application/ld+json">
+			{
+				"@context": "http://schema.org/",
+				"@type": "Product",
+				"name": "Ramsholmens vegetariska fårfäll",
+				"description": "Fårens ull har nästintill magiska egenskaper. Ullen klipps i ett stycke och tovas & tvättas. All fällar är vegetariska, det vill säga att fåret fortfarande lever :)",
+				"brand": {
+					"@type": "Thing",
+					"name": "Ramsholmens"
+				},
+				"offers": {
+					"@type": "Offer",
+					"priceCurrency": "SEK",
+					"price": "4000",
+					"priceValidUntil": "2016-05-01",
+					"itemCondition": "http://schema.org/NewCondition",
+					"availability": "http://schema.org/InStock",
+					"seller": {
+						"@type": "Organization",
+						"name": "Ramsholmens"
+					}
+				}
+			}
+		</script>
+
+		<script type="application/ld+json">
+			{
+				"@context": "http://schema.org/",
+				"@type": "Product",
+				"name": "Ramsholmens lammlåda",
+				"description": "Våra lamm går ute året runt och äter naturligt gräs. 210kr/kg vid köp av en låda på 8-12kg",
+				"brand": {
+					"@type": "Thing",
+					"name": "Ramsholmens"
+				},
+				"offers": {
+					"@type": "Offer",
+					"priceCurrency": "SEK",
+					"price": "210",
+					"priceValidUntil": "2015-12-01",
+					"itemCondition": "http://schema.org/NewCondition",
+					"availability": "http://schema.org/InStock",
+					"seller": {
+						"@type": "Organization",
+						"name": "Ramsholmens"
+					}
+				}
+			}
+		</script>
 
 		<script>
 			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
