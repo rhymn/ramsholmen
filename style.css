@@ -8,14 +8,12 @@ body{
 	background-color: transparent;
 }
 
-.section{
-
-}
 
 .lamb-section{
 	background-image: url(lamb.jpg);
 	background-size: cover;
 	background-repeat: no-repeat;
+	background-position:center center;
 
 	min-height: 600px;
 }
