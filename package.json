@@ -1,0 +1,23 @@
+{
+  "name": "ramsholmen",
+  "version": "1.0.0",
+  "devDependencies": {
+    "browser-sync": "*",
+    "express": "*",
+    "grunt": "*",
+    "grunt-browser-sync": "*",
+    "grunt-cli": "*",
+    "grunt-concurrent": "*",
+    "grunt-contrib-jshint": "^0.11.3",
+    "grunt-contrib-watch": "^0.6.1",
+    "grunt-shell": "*"
+  },
+  "scripts": {
+    "start": "grunt"
+  },
+  "description": "ramsholmen website",
+  "main": "server.js",
+  "author": "Kåda AB",
+  "license": "ISC",
+  "homepage": "http://www.ramshol.men"
+}
