@@ -51,6 +51,7 @@ ramsholmen.config(['$routeProvider', '$locationProvider', '$httpProvider', '$com
 			// Swap background image
 			if($scope.list[id].sheep.image){
 				$('#still-alive-section').css({
+					'background-position': 'center center',
 					'background-image': 'url('+$scope.list[id].sheep.image+')'
 				});
 			}

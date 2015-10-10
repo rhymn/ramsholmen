@@ -15,7 +15,7 @@ ul{
 
 a{
 	color: #337ab7;
-	box-shadow: 1px;
+	text-shadow: 2px 2px 2px rgba(50, 50, 50, 1);
 }
 
 .jumbotron{
@@ -27,9 +27,6 @@ a{
 	transition: background-image 0.5s ease-in-out;
 }
 
-#still-alive-section a{
-	text-shadow: 2px 2px 2px rgba(50, 50, 50, 1);
-}
 
 .lamb-section{
 	background-image: url(img/sunset.jpg);
