@@ -41,7 +41,7 @@ module.exports = function(grunt) {
                options: {
                     proxy: "localhost:3200",
                     port: "3002",
-                    files: "css/*, **/*.html, *.js, js/**/*.js"
+                    files: "css/*, **/*.html, *.js, js/**/*.js, *.css"
                 }
             }
         }
