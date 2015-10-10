@@ -25,20 +25,35 @@ ramsholmen.config(['$routeProvider', '$locationProvider', '$httpProvider', '$com
 
 .controller('SheepFinderCtrl', ['$scope', function($scope){
 
-	$scope.sheepList = {
-		'disa-1': {
+	$scope.sheep = {
+		'disa': {
 			'name': 'Disa',
 			'born': '2015-01-02',
-			'info': 'Disa har tillsammans med Måna och Snövit varit med längst i flocken. Hon är lugnt och vill gärna kela när man kommer fram till henne',
-			'sheerDate': '2015-06-29'
+			'info': 'Disa har tillsammans med Måna och Snövit varit med längst i flocken. Hon är lugn och vill gärna kela när man kommer fram till henne',
+			'image': 'disa.jpg'
+		}
+	};
+
+	$scope.list = {
+		'disa-1': {
+			'sheep': $scope.sheep.disa,
+			'sheerDate': '2015-06-29',
+			'version': 1
 		}
 	};
 
 	$scope.find = function(id){
-		if(id in $scope.sheepList){
+		if(id in $scope.list){
 			$scope.error = false;
 
-			$scope.sheep = $scope.sheepList[id];
+			$scope.cut = $scope.list[id];
+
+			// Swap background image
+			if($scope.list[id].sheep.image){
+				$('#still-alive-section').css({
+					'background-image': 'url(../img/sheep/'+$scope.list[id].sheep.image+')'
+				});
+			}
 		}
 
 		else{

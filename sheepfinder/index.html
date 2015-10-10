@@ -31,7 +31,7 @@
 			</div>
 		</header>
 
-		<div class="section lamb-section" ng-controller="SheepFinderCtrl">
+		<div class="section lamb-section" ng-controller="SheepFinderCtrl" id="still-alive-section">
 			<div class="alpha-channel">
 				<div class="container-fluid">
 					<div class="row">
@@ -51,14 +51,16 @@
 						<div class="col-sm-6">
 							<div class="jumbotron">
 								<div class="alert alert-danger" ng-show="error">
-									Vi hittade inget sådant får, försök igen
+									Vi hittade inget sådant får. På fällen finns det ett unikt id, t.ex. "disa-1". Skriv in det i fältet bredvid.
 								</div>
 
-								<div ng-model="sheep" id="info" ng-show="sheep.name">
-									<h3>{{sheep.name}}</h3>
+								<div ng-model="cut" id="info" ng-show="cut.sheerDate">
+									<h3>{{cut.sheep.name}}</h3>
 
-									<p>{{sheep.info}}</p>
-									<p>Klippdatum: {{sheep.sheerDate}}</p>
+									<p>{{cut.sheep.info}}. Detta är fäll nummer {{cut.version}} från {{cut.sheep.name}}</p>
+
+									<p>{{cut.sheep.name}} är född: {{cut.sheep.born}}</p>
+									<p>Klippdatum: {{cut.sheerDate}}</p>
 								</div>
 							</div>
 						</div>
@@ -74,8 +76,7 @@
 				<div class="row">
 					<div class="col-sm-12">
 						<div class="jumbotron">
-							<h2>Kontakt</h2>
-							<p><a href="http://instagram.com/ramsholmen/">Instagram</a> | <a href="mailto:hej@ramshol.men">hej@ramshol.men</a></p>
+							<p><a href="http://www.ramshol.men">Tillbaks till Ramsholmens hemsida</a></p>
 						</div>
 					</div>
 				</div>
