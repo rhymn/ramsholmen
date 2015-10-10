@@ -1,7 +1,16 @@
 body{
-	background-color: #666;
+	background-color: #8B7355;
 	color: #FFF;
 	font-family: 'Courgette', cursive;	
+}
+
+ul{
+	list-style-type: none;
+	padding-left: 0;
+}
+
+a{
+	color: #23527c;	
 }
 
 .jumbotron{
@@ -10,7 +19,7 @@ body{
 
 
 .lamb-section{
-	background-image: url(lamb.jpg);
+	background-image: url(img/lamb.jpg);
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position:center center;
@@ -20,7 +29,7 @@ body{
 
 
 .honey-section{
-	background-image: url(bikupa.jpg);
+	background-image: url(img/bikupa.jpg);
 	background-size: cover;
 	background-repeat: no-repeat;
 
@@ -28,7 +37,7 @@ body{
 }
 
 .skin-section{
-	background-image: url(traktor.jpg);
+	background-image: url(img/traktor.jpg);
 	background-size: cover;
 	background-repeat: no-repeat;
 }
@@ -37,6 +46,15 @@ body{
 .tractor-section{
 	background-size: cover;
 	background-repeat: no-repeat;
+}
+
+.ramsholmen-section{
+	background-image: url(img/ramsholmen.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position:center center;
+
+	min-height: 600px;
 }
 
 
@@ -72,8 +90,8 @@ body{
 }
 
 .modal .btn{
-	width: 100%;
 }
+
 
 
 
