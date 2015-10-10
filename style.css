@@ -1,5 +1,5 @@
 body{
-	background-color: #8B7355;
+	background-color: #433323;
 	color: #FFF;
 	font-family: 'Courgette', cursive;	
 }
@@ -10,13 +10,22 @@ ul{
 }
 
 a{
-	color: #23527c;	
+	color: #337ab7;
+	box-shadow: 1px;
 }
 
 .jumbotron{
 	background-color: transparent;
 }
 
+#still-alive-section{
+	-webkit-transition: background-image 0.5s ease-in-out;
+	transition: background-image 0.5s ease-in-out;
+}
+
+#still-alive-section a{
+	text-shadow: 2px 2px 2px rgba(50, 50, 50, 1);
+}
 
 .lamb-section{
 	background-image: url(img/lamb.jpg);
