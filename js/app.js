@@ -30,7 +30,7 @@ ramsholmen.config(['$routeProvider', '$locationProvider', '$httpProvider', '$com
 			'name': 'Disa',
 			'born': '2015-01-02',
 			'info': 'Disa har tillsammans med Måna och Snövit varit med längst i flocken. Hon är lugn och vill gärna kela när man kommer fram till henne',
-			'image': 'disa.jpg'
+			'image': 'http://www.ramshol.men/img/sheep/disa.jpg'
 		}
 	};
 
@@ -51,13 +51,14 @@ ramsholmen.config(['$routeProvider', '$locationProvider', '$httpProvider', '$com
 			// Swap background image
 			if($scope.list[id].sheep.image){
 				$('#still-alive-section').css({
-					'background-image': 'url(../img/sheep/'+$scope.list[id].sheep.image+')'
+					'background-image': 'url('+$scope.list[id].sheep.image+')'
 				});
 			}
 		}
 
 		else{
 			$scope.error = true;
+			$scope.cut = false;
 		}
 	}
 }]);
