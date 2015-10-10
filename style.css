@@ -32,7 +32,7 @@ a{
 }
 
 .lamb-section{
-	background-image: url(img/lamb.jpg);
+	background-image: url(img/sunset.jpg);
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position:center center;
@@ -50,9 +50,10 @@ a{
 }
 
 .skin-section{
-	background-image: url(img/traktor.jpg);
+	background-image: url(img/tjejerna.jpg);
 	background-size: cover;
 	background-repeat: no-repeat;
+	background-position:right center;
 }
 
 
