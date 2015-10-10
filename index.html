@@ -1,10 +1,14 @@
 <!DOCTYPE html>
 <html lang="sv">
 	<head>
+		<title>Ramsholmen</title>
+
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>Ramsholmens kulturreservat | Honung och Lamm</title>
+		<meta name="description" content="Lamm, honung & vegetariska fårfällar">
+		<meta content="ramsholmen kulturreservat odlingslandskap honung lammlådor lammlåda" name="keywords">
+		<meta content="follow,index" name="robots">
 
 		<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
 		<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Courgette" type="text/css">
@@ -36,18 +40,7 @@
 								<p>Våra lamm går ute året runt och äter naturligt gräs. I november kommer det finnas lammlådor på 8-12kg för 210kr/kg. Hämtning i Örby utanför Skene, utkörning till centrala Göteborg för 200kr</p>
 
 								<p>
-									<button class="btn" type="button" data-target="#lamb-collapse" data-toggle="collapse">Innehåll lammlåda</button>
-
-									<div class="collapse" id="lamb-collapse">
-										<ul>
-											<li>Lamm racks</li>
-											<li>Kotletter</li>
-											<li>Karré skivad</li>
-											<li>Nätade stekar utan ben</li>
-											<li>Grytbitar av hals och bog</li>
-											<li>Färs på övrigt kött</li>
-										</ul>										
-									</div>
+									<button class="btn btn-default" type="button" data-target="#lamb-modal" data-toggle="modal">Innehåll lammlåda</button>
 								</p>
 							</div>
 						</div>
@@ -55,6 +48,39 @@
 				</div>
 			</div>
 		</div>
+
+		<div class="modal fade" id="lamb-modal">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Stäng"><span aria-hidden="true">&times;</span></button>
+						<h4 class="modal-title">Innehåll i en lammlåda</h4>
+					</div>
+	
+					<div class="modal-body">
+						<ul>
+							<li>Lamm racks</li>
+							<li>Kotletter</li>
+							<li>Karré skivad</li>
+							<li>Nätade stekar utan ben</li>
+							<li>Grytbitar av hals och bog</li>
+							<li>Färs på övrigt kött</li>
+						</ul>										
+					</div>
+
+					<div class="modal-footer">
+						<button type="button" class="btn btn-default" data-dismiss="modal">OK</button>
+					</div>
+				</div><!-- /.modal-content -->
+			</div><!-- /.modal-dialog -->
+		</div><!-- /.modal -->
+
+
+
+
+
+
+
 
 		<div class="section honey-section">
 			<div class="alpha-channel">
@@ -82,23 +108,10 @@
 								<p>Fårens ull har nästintill magiska egenskaper. Ullen klipps i ett stycke och tovas & tvättas. Fällarna är vegetariska, vilket innebär att fåret fortfarande lever. Inga kemikalier har använts vid framställningen förutom vanligt handdiskmedel. 2000kr - 4000kr</p>
 
 								<p>
-									<button class="btn" type="button" data-target="#still-alive-collapse" data-toggle="collapse">Läs mer</button>
-
-									<div class="collapse" id="still-alive-collapse">
-										<p>
-											Fåren är av rasen Klövsjöfår som är en svensk lantras. De bor på Ramsholmen, ett kulterreservat långt ifrån konstgödsling och GMO, några mil SO om Göteborg. Alla våra får ingår i genbank eftersom rasen Klövsjöfår är utroningshotad.
-										</p>
-
-										<p>
-											Tvättråd: Vädra, skaka. Går att köra i maskin på ullprogrammet.
-										</p>
-
-										<p>
-											Ullfakta: Ull antänder först vid 700 grader (bomull 100 grader)
-										</p>
-
-									</div>
+									<button class="btn" type="button" data-target="#still-alive-modal" data-toggle="modal">Läs mer</button>
 								</p>
+
+								<p><a href="/sheepfinder/">Sheep finder</a></p>
 							</div>
 						</div>
 					</div>
@@ -106,13 +119,84 @@
 			</div>
 		</div>
 
+
+		<div class="modal fade" id="still-alive-modal">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Stäng"><span aria-hidden="true">&times;</span></button>
+						<h4 class="modal-title">Vegetarisk fårfäll</h4>
+					</div>
+	
+					<div class="modal-body">
+						<p>
+							Fåren är av rasen Klövsjöfår som är en svensk lantras. De bor på Ramsholmen, ett kulterreservat långt ifrån konstgödsling och GMO. Alla våra får ingår i genbank eftersom rasen Klövsjöfår är utrotningshotad. På alla fällar finns en webbadress samt ett unikt nummer så att du kan läsa om just ditt får.
+						</p>
+
+						<h3>Tvättråd</h3>
+						<p>
+							Vädra, skaka. Går att köra i maskin på ullprogrammet.
+						</p>
+
+						<h3>Ullfakta</h3>
+						<p>
+							Ull antänder först vid 700 grader
+						</p>
+					</div>
+
+					<div class="modal-footer">
+						<button type="button" class="btn btn-default" data-dismiss="modal">OK</button>
+					</div>
+				</div><!-- /.modal-content -->
+			</div><!-- /.modal-dialog -->
+		</div><!-- /.modal -->
+
+
+
+
+		<div class="section ramsholmen-section">
+			<div class="alpha-channel">
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-sm-12">
+							<div class="jumbotron">
+								<h2>Om Ramsholmen</h2>
+								<p>Gården ligger mitt i ett kulturreservat i Örby, Marks kommun<p>
+
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
 		<div class="footer">
 			<div class="container-fluid">
 				<div class="row">
-					<div class="col-sm-12">
+					<div class="col-sm-6">
 						<div class="jumbotron">
 							<h2>Kontakt</h2>
-							<p><a href="http://instagram.com/ramsholmen/">Instagram</a> | <a href="mailto:hej@ramshol.men">hej@ramshol.men</a></p>
+							<ul>
+								<li><a href="http://instagram.com/ramsholmen/">Instagram</a></li>
+								<li><a href="mailto:hej@ramshol.men">hej@ramshol.men</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-sm-6">
+						<div class="jumbotron pull-right">
+							<ul>
+								<li>
+									<a href="https://sv.m.wikipedia.org/wiki/Ramsholmens_odlingslandskap">Ramsholmens odlingslandskap på Wikipedia</a>
+								</li>
+
+								<li>
+									<a href="http://www.mark.se/sv/Upptack-Mark/Kulturreservatet-Ramsholmen/">Ramsholmens kulturreservat på Marks kommun</a>
+								</li>
+
+
+								<li>
+									<a href="http://www.vastsverige.com/Mobile/Product.aspx?pid=52306&l=sv&prodid=62198">Ramsholmens kulturreservat på västsverige.com</a>
+								</li>
+							</ul>
 						</div>
 					</div>
 				</div>
@@ -120,8 +204,10 @@
 		</div>
 
 
+
 		<script src="http://code.jquery.com/jquery-2.1.3.min.js"></script>
-		<script src="http://netdna.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+		<script src="http://netdna.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
 
 		<script type="application/ld+json">
 			{
