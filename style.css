@@ -74,6 +74,12 @@ a{
 	background: rgba(0, 0, 0, 0.4);
 }
 
+a, button, a:focus, button:focus{
+	outline: 0 !important;
+	text-decoration: none !important;
+	border: none !important;
+}
+
 
 
 /*********

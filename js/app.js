@@ -110,7 +110,7 @@ ramsholmen.config(['$routeProvider', '$locationProvider', '$httpProvider', '$com
 
 	$scope.find = function(id){
 
-		id = id.toLowerCase();
+		id = angular.lowercase(id);
 
 		// If searching for a Still Alive
 		if(id in $scope.list){
