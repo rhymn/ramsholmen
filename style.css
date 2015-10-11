@@ -81,6 +81,11 @@ a, button, a:focus, button:focus{
 }
 
 
+input,
+textarea {
+  font-size: 16px;
+}
+
 
 /*********
  *
