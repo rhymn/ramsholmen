@@ -103,6 +103,13 @@ a{
 .modal .btn{
 }
 
+.individual-in-sheep:after{
+	content: ', ';
+}
+
+.individual-in-sheep:last-child:after{
+	content: '';
+}
 
 
 

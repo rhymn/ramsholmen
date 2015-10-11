@@ -43,12 +43,19 @@
 							<div class="jumbotron lamb-text">
 								<h2>Hitta ditt får</h2>
 
-								<form class="">
-									<div class="form-group">
-										<input class="form-control" type="text" ng-model="id" placeholder="Still Alive ID" />
-									</div>
-									<button class="btn btn-success" type="submit" ng-click="find(id)">Hitta mitt får</button> Eller <button class="btn btn-primary" type="submit" ng-click="find('disa-1')"> Visa ett exempel</button>
-								</form>
+								<p>
+									<form class="form-inline">
+										<div class="form-group">
+											<input class="form-control" type="text" ng-model="id" placeholder="Still Alive ID" />
+										</div>
+										<button class="btn btn-success" type="submit" ng-click="find(id)">Hitta mitt får</button>
+
+									</form>
+								</p>
+
+								<p>
+									Våra Still Alive-får är: <span class="individual-in-sheep" ng-repeat="i in sheep"><a href ng-click="find(i.name)">{{i.name}}</a></span>										
+								</p>
 
 							</div>
 
@@ -60,20 +67,32 @@
 									Vi hittade inget sådant får. På fällen finns det ett unikt id, t.ex. "disa-1". Skriv in det i fältet bredvid.
 								</div>
 
-								<div ng-model="cut" id="info" ng-show="cut.sheerDate">
+								<div ng-model="cut" id="info" ng-show="cut">
 									<h3>{{cut.sheep.name}}</h3>
 
-									<p>{{cut.sheep.info}}. Detta är fäll nummer {{cut.version}} från {{cut.sheep.name}}</p>
+									<p>{{cut.sheep.info}}. <span ng-show="cut.version">Detta är fäll nummer {{cut.version}} från {{cut.sheep.name}}</span></p>
 
 									<p>{{cut.sheep.name}} är född: {{cut.sheep.born}}</p>
-									<p>Klippdatum för denna fäll: {{cut.sheerDate}}</p>
+									<p ng-show="cut.sheep.parents">Mor: {{cut.sheep.parents.m}}. Far: {{cut.sheep.parents.f}}</p>
+
+									<p ng-show="cut.sheerDate">Klippdatum för denna fäll: {{cut.sheerDate}}</p>
 
 									<p ng-show="cut.sheep.image">Bakgrundsbilden är på {{cut.sheep.name}}, du kan <a target="_blank" class="" href="{{cut.sheep.image}}">ladda ner bilden här</a></p>
 								</div>
 							</div>
+
 						</div>
 
 					</div>
+
+					<div class="row">
+						<div class="col-md-12">
+							<div class="jumbotron">
+								
+							</div>							
+						</div>						
+					</div>
+
 				</div>
 			</div>
 		</div>

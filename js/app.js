@@ -28,10 +28,46 @@ ramsholmen.config(['$routeProvider', '$locationProvider', '$httpProvider', '$com
 	$scope.sheep = {
 		'disa': {
 			'name': 'Disa',
-			'born': '2015-01-02',
+			'born': '2013-04-21',
 			'info': 'Disa har tillsammans med Måna och Snövit varit med längst i flocken. Hon är lugn och vill gärna kela när man kommer fram till henne',
-			'image': 'http://www.ramshol.men/img/sheep/disa.jpg'
+			'image': 'http://www.ramshol.men/img/sheep/disa.jpg',
+			'parents': {
+				'm': 'Tålyckas Blåmålla',
+				'f': 'Rutger'
+			}
+		},
+
+		'måna': {
+			'name': 'Måna',
+			'born': '2013-04-23',
+			'info': 'Måna har tillsammans med Disa och Snövit varit med längst i flocken. Hon är precis som Disa väldigt kelig och sällskaplig',
+			'parents': {
+				'm': 'Snövit',
+				'f': 'Rutger'
+			}
+		},
+
+		'snövit': {
+			'name': 'Snövit',
+			'born': '2011-04-12',
+			'info': 'Vit som snö och äldst i flocken, hon är också den som bestämmer. Hon är lugn och lite skygg och håller sig gärna lite i bakgrunden',
+			'parents': {
+				'm': 'Tålyckas Svartfot',
+				'f': 'Kamelen'
+			}
+		},
+
+
+		'clara': {
+			'name': 'Clara',
+			'born': '2013-04-05',
+			'info': 'Clara är född på Orust, trots sitt namn är hon nästan helt svart',
+			'parents': {
+				'm': 'Tålyckans Månviol',
+				'f': 'Julius'
+			}
 		}
+
 	};
 
 	$scope.list = {
@@ -39,29 +75,62 @@ ramsholmen.config(['$routeProvider', '$locationProvider', '$httpProvider', '$com
 			'sheep': $scope.sheep.disa,
 			'sheerDate': '2015-06-29',
 			'version': 1
-		}
+		},
+
+		'måna-1': {
+			'sheep': $scope.sheep['måna'],
+			'sheerDate': '2015-06-29',
+			'version': 1
+		},
+
+		'snövit-1': {
+			'sheep': $scope.sheep['snövit'],
+			'sheerDate': '2015-06-29',
+			'version': 1
+		},
+
 	};
 
+	$scope.loadImage = function(obj){
+		if(obj.image){
+
+			var img = new Image();
+
+			img.onload = function(){
+				$('#still-alive-section').css({
+					'background-position': 'center center',
+					'background-image': 'url('+obj.image+')'
+				});
+			}
+
+			img.src = obj.image;
+		}
+
+	}
+
 	$scope.find = function(id){
+
+		id = id.toLowerCase();
+
+		// If searching for a Still Alive
 		if(id in $scope.list){
 			$scope.error = false;
 
 			$scope.cut = $scope.list[id];
 
 			// Swap background image
-			if($scope.list[id].sheep.image){
+			$scope.loadImage($scope.list[id].sheep);
+		}
 
-				var img = new Image();
+		// If searching for a sheep
+		else if(id in $scope.sheep){
+			$scope.error = false;
 
-				img.onload = function(){
-					$('#still-alive-section').css({
-						'background-position': 'center center',
-						'background-image': 'url('+$scope.list[id].sheep.image+')'
-					});
-				}
+			$scope.cut = {}
+			$scope.cut.sheep = $scope.sheep[id];
 
-				img.src = $scope.list[id].sheep.image;
-			}
+			// Swap background image
+			$scope.loadImage($scope.sheep[id]);
 		}
 
 		else{
