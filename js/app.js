@@ -62,12 +62,20 @@ ramsholmen.config(['$routeProvider', '$locationProvider', '$httpProvider', '$com
 			'name': 'Clara',
 			'born': '2013-04-05',
 			'info': 'Clara är född på Orust, trots sitt namn är hon nästan helt svart',
+			'image': 'http://www.ramshol.men/img/sheep/clara.jpg',
 			'parents': {
 				'm': 'Tålyckans Månviol',
 				'f': 'Julius'
 			}
-		}
+		},
 
+
+		'cornelia': {
+			'name': 'Cornelia',
+			'born': '2013-04-05',
+			'info': 'Cornelia är född på Orust',
+			'image': 'http://www.ramshol.men/img/sheep/cornelia.jpg',
+		}
 	};
 
 	$scope.list = {
