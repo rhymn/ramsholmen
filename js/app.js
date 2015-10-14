@@ -40,7 +40,8 @@ ramsholmen.config(['$routeProvider', '$locationProvider', '$httpProvider', '$com
 		'måna': {
 			'name': 'Måna',
 			'born': '2013-04-23',
-			'info': 'Måna har tillsammans med Disa och Snövit varit med längst i flocken. Hon är precis som Disa väldigt kelig och sällskaplig',
+			'info': 'Måna har tillsammans med Disa och Snövit varit med längst i flocken. Hon är precis som Disa väldigt kelig och sällskaplig. Hon är dotter till vår äldsta tacka Snövit',
+			'image': 'http://www.ramshol.men/img/sheep/mona.jpg',
 			'parents': {
 				'm': 'Snövit',
 				'f': 'Rutger'
@@ -51,6 +52,7 @@ ramsholmen.config(['$routeProvider', '$locationProvider', '$httpProvider', '$com
 			'name': 'Snövit',
 			'born': '2011-04-12',
 			'info': 'Vit som snö och äldst i flocken, hon är också den som bestämmer. Hon är lugn och lite skygg och håller sig gärna lite i bakgrunden',
+			'image': 'http://www.ramshol.men/img/sheep/snövit.jpg',
 			'parents': {
 				'm': 'Tålyckas Svartfot',
 				'f': 'Kamelen'
@@ -75,28 +77,52 @@ ramsholmen.config(['$routeProvider', '$locationProvider', '$httpProvider', '$com
 			'born': '2013-04-05',
 			'info': 'Cornelia är född på Orust',
 			'image': 'http://www.ramshol.men/img/sheep/cornelia.jpg',
+		},
+
+
+		'cecilia': {
+			'name': 'Cecilia',
+			'born': '2013-04-05',
+			'info': 'Cecilia är född på Orust',
+			'image': 'http://www.ramshol.men/img/sheep/cecilia.jpg',
+		},
+
+
+		'camilla': {
+			'name': 'Camilla',
+			'born': '2013-04-05',
+			'info': 'Camilla är född på Orust',
+			'image': 'http://www.ramshol.men/img/sheep/camilla.jpg',
 		}
+
+
 	};
 
 	$scope.list = {
 		'disa-1': {
 			'sheep': $scope.sheep.disa,
-			'sheerDate': '2015-06-29',
+			'sheerDate': '2015-05-31',
 			'version': 1
 		},
 
 		'måna-1': {
 			'sheep': $scope.sheep['måna'],
-			'sheerDate': '2015-06-29',
+			'sheerDate': '2015-05-29',
 			'version': 1
 		},
 
 		'snövit-1': {
 			'sheep': $scope.sheep['snövit'],
-			'sheerDate': '2015-06-29',
+			'sheerDate': '2015-05-31',
 			'version': 1
 		},
 
+
+		'cornelia-1': {
+			'sheep': $scope.sheep['cornelia'],
+			'sheerDate': '2015-05-28',
+			'version': 1
+		},
 	};
 
 	$scope.loadImage = function(obj){
