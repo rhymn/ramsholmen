@@ -56,6 +56,13 @@ a:hover{
 }
 
 .skin-section{
+	background-image: url(img/stillalive.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position:left center;
+}
+
+.sheepfinder-section{
 	background-image: url(img/tre-tjejer.jpg);
 	background-size: cover;
 	background-repeat: no-repeat;
