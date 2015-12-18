@@ -99,30 +99,35 @@ ramsholmen.config(['$routeProvider', '$locationProvider', '$httpProvider', '$com
 	};
 
 	$scope.list = {
-		'disa-1': {
+		'disa2015': {
 			'sheep': $scope.sheep.disa,
 			'sheerDate': '2015-05-31',
 			'version': 1
 		},
 
-		'måna-1': {
+		'måna2015': {
 			'sheep': $scope.sheep['måna'],
 			'sheerDate': '2015-05-29',
 			'version': 1
 		},
 
-		'snövit-1': {
+		'snövit2015': {
 			'sheep': $scope.sheep['snövit'],
 			'sheerDate': '2015-05-31',
 			'version': 1
 		},
 
-
-		'cornelia-1': {
+		'cornelia2015': {
 			'sheep': $scope.sheep['cornelia'],
 			'sheerDate': '2015-05-28',
 			'version': 1
 		},
+
+		'cecilia2015': {
+			'sheep': $scope.sheep['cecilia'],
+			'sheerDate': '2015-05-28',
+			'version': 1
+		}
 	};
 
 	$scope.loadImage = function(obj){
