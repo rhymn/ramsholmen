@@ -108,6 +108,7 @@ ramsholmen.config(['$routeProvider', '$locationProvider', '$httpProvider', '$com
 		'måna2015': {
 			'sheep': $scope.sheep['måna'],
 			'sheerDate': '2015-05-29',
+			'feltDate': '2015-06-28',
 			'version': 1
 		},
 
@@ -126,11 +127,12 @@ ramsholmen.config(['$routeProvider', '$locationProvider', '$httpProvider', '$com
 		'cecilia2015': {
 			'sheep': $scope.sheep['cecilia'],
 			'sheerDate': '2015-05-28',
+			'feltDate': '2015-10-23',
 			'version': 1
 		},
 
 		'clara2015': {
-			'sheep': $scope.sheep['cecilia'],
+			'sheep': $scope.sheep['clara'],
 			'sheerDate': '2015-05-28',
 			'feltDate': '2015-12-19',
 			'version': 1
