@@ -102,6 +102,7 @@ ramsholmen.config(['$routeProvider', '$locationProvider', '$httpProvider', '$com
 		'disa2015': {
 			'sheep': $scope.sheep.disa,
 			'sheerDate': '2015-05-31',
+			'filtDate': '2015-12-21',
 			'version': 1
 		},
 
